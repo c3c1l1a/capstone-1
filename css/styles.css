@@ -18,31 +18,16 @@ header {
 }
 
 
-
-
 .icon {
   font-size: 30px;
 }
 
 .CTA {
+  background-image: url('../assets/images/bg-mobile-1.png'); 
   background-size: 100%;
 
 }
 
-.CTA:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-image: url('../assets/images/pexels-sergey.jpg'); /* Image provided by Fred the Oyster, CC BY-SA 4.0, via Wikimedia Commons */
-  background-repeat: no-repeat;
-  background-size: 100%;
-  filter: blur(1px);
-  opacity: 0.4;
-  z-index: -1;
-}
 
 .paragraph-box {
   padding: 20px;
