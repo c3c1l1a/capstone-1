@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+:root {
+  /* Text size */
+  --text-small: 10.3334px;
+  --text-medium: 18px;
+  --text-large: 20px;
+  --text-x-large: 60px;
+
+  /* Font family */
+  --primary-font-family: "Lato", sans-serif;
+  --secondary-font-family: "Cocogoose", sans-serif;
+
+  /* Primary color */
+  --primary-color: #272a31;
+  --secondary-color: #ec5242;
+  --tartiary-color: #d3d3d3;
+
+  /* Font weight */
+  --normal: 400;
+  --bold: 700;
+}
