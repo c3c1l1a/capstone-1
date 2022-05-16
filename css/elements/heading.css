@@ -1,8 +1,8 @@
 .heading--main {
 	color: var(--secondary-color);
 	font-family: var(--secondary-font-family);	
-	font-weight: 900;
-	font-size: 50px;
+	font-weight: var(--xtra-bold);
+	font-size: var(--text-x-large);
 }
 
 .heading--secondary {
@@ -14,7 +14,7 @@
 .heading-quote {
 	color: var(--secondary-color);
 	font-family: var(--primary-font-family);
-	font-weight: 300;
-	font-size: 1.5em;
+	font-weight: var(--normal);
+	font-size: var(--text-large);
 }
 

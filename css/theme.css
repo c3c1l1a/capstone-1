@@ -13,8 +13,8 @@ html {
   /* Text size */
   --text-small: 10.3334px;
   --text-medium: 18px;
-  --text-large: 20px;
-  --text-x-large: 60px;
+  --text-large: 30px;
+  --text-x-large: 50px;
 
   /* Font family */
   --primary-font-family: "Lato", sans-serif;
@@ -28,4 +28,5 @@ html {
   /* Font weight */
   --normal: 400;
   --bold: 700;
+  --xtra-bold: 900;
 }

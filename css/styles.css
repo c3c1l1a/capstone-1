@@ -26,7 +26,14 @@ header {
 .CTA {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
+}
+
+h1.heading--main {
+  background: url('../assets/images/fire.jpg') no-repeat; /* Photo by Pixabay: https://www.pexels.com/photo/flare-of-fire-on-wood-with-black-smokes-57461/ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .paragraph-box {
