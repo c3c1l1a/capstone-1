@@ -9,10 +9,20 @@
 @import url('theme.css');
 
 /* Elementnts */
-@import url('elements/header.css');
+@import url('elements/heading.css');
 @import url('elements/paragraph.css');
 
 
+header {
+  padding: 20px;
+}
+
+
+
+
+.icon {
+  font-size: 30px;
+}
 
 .CTA {
   background-size: 100%;

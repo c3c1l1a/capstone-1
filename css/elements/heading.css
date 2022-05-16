@@ -1,0 +1,20 @@
+.heading--main {
+	color: var(--secondary-color);
+	font-family: var(--secondary-font-family);	
+	font-weight: 900;
+	font-size: 2em;
+}
+
+.heading--secondary {
+	color: var(--primary-color);
+	font-family: var(--primary-font-family);	
+	font-weight: 600;
+}
+
+.heading-quote {
+	color: var(--secondary-color);
+	font-family: var(--primary-font-family);
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
