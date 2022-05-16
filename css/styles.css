@@ -14,23 +14,24 @@
 
 
 header {
-  padding: 20px;
-}
-
-
-.icon {
-  font-size: 30px;
-}
-
-.CTA {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   background-image: url('../assets/images/bg-mobile-1.png'); 
   background-size: 100%;
-
+  padding: 20px;
 }
 
 
+.CTA {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .paragraph-box {
-  padding: 20px;
-  border: solid 2px red;
+  padding: 10px;
+  background: #f7f7f7;
+  border: solid 2px #fff;
 }
 
