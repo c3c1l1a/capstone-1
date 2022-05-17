@@ -93,17 +93,20 @@ h1.heading--main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
   padding: 20px;
 }
 
 .featured-speakers__card {
   display: flex;
   gap:  20px;
+}
+
+.featured-speakers__img {
   background-image: url('../assets/images/checkers.jpg');
   background-repeat: no-repeat;
-  background-size: 20%;
-  padding: 20px;
+  background-size: 80%;
+  padding: 20px 0 0 20px;
 }
 
 .featured-speakers__card h3.heading--secondary {
@@ -135,4 +138,18 @@ h1.heading--main {
   font-size: var(--text-small);
 }
 
+.featured-speakers img.expand-icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(36%) sepia(79%) saturate(1556%) hue-rotate(339deg) brightness(101%)
+}
+
+.featured-speakers a.button--secondary {
+  width: 100%;
+}
+
+.featured-speakers > a span.paragraph-normal {
+  font-size: var(--text-small);
+  color: var(--tartiary-color);
+}
 

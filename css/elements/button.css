@@ -1,6 +1,7 @@
 .button--primary {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background: #ff4f38;
   padding: 20px 60px;
   color: #fff;
@@ -9,14 +10,21 @@
   font-weight: var(--bold);
 }
 
-.button--primary:hover {
-  background: var(--primary-color);
-  color: #fff;
+.button--secondary {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 10px 60px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font: var(--text-medium) var(--primary-font-family);
+  font-weight: var(--bold);
+  border: solid 1px var(--tartiary-color);
 }
 
-.button--primary:hover img {
-  filter: invert(1);
-}
+
 
 @media (min-width: 768px) {
   .button--primary {
