@@ -11,6 +11,8 @@
 /* Elementnts */
 @import url('elements/heading.css');
 @import url('elements/paragraph.css');
+@import url('elements/underline.css');
+@import url('elements/button.css');
 
 
 header {
@@ -41,4 +43,41 @@ h1.heading--main {
   background: #f7f7f7;
   border: solid 2px #fff;
 }
+
+.sessions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--primary-color);
+  padding: 20px;
+
+}
+
+.sessions h3 {
+  color: var(--tartiary-color);
+}
+
+.sessions img.yoga-icon {
+  filter: invert(81%) sepia(0%) saturate(0%) hue-rotate(89deg) brightness(105%) contrast(93%);
+  width: 40px;
+  height: 40px;
+}
+
+.sessions p {
+  color: #fff;
+  font-size: var(--text-small);
+}
+
+.session-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 10px;
+  background: #3b3e45;
+}
+
+
+
+.
 

@@ -1,5 +1,6 @@
 .paragraph-normal {
-	color: var(--primary-color);
+  color: var(--primary-color);
   font-family: var(--primary-font-family);
   font-size: var(--text-medium);
+  line-height: 18px;
 }

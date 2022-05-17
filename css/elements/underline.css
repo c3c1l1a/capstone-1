@@ -1,0 +1,14 @@
+.underline {
+	position: relative;
+}
+
+.underline:after {
+	content: "";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -15px;
+    width: 30%;
+    height: 1px;
+    background: var(--secondary-color);
+}
