@@ -5,6 +5,15 @@
 	font-size: var(--text-large);
 }
 
+.heading-date {
+	color: var(--primary-color) rgb(0, 0, 0, 0.5);
+	font-family: var(--secondary-font-family);	
+	font-weight: var(--bold);
+	font-size: 25px;
+	opacity: 0.6;
+
+}
+
 .heading--main {
 	color: var(--secondary-color);
 	font-family: var(--secondary-font-family);	

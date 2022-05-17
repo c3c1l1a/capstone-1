@@ -20,8 +20,9 @@ header {
   flex-direction: column;
   gap: 50px;
   background-image: url('../assets/images/bg-mobile-1.png'); 
+  background-position: center center;
   background-size: 100%;
-  padding: 20px;
+  padding: 50px 20px;
 }
 
 
@@ -38,6 +39,17 @@ h1.heading--main {
   -webkit-text-fill-color: transparent;
 }
 
+.CTA > .date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.CTA > .date p.paragraph-normal {
+  opacity: 0.8;
+}
+
 .paragraph-box {
   padding: 10px;
   background: #f7f7f7;
@@ -50,7 +62,7 @@ h1.heading--main {
   align-items: center;
   gap: 30px;
   background-color: var(--primary-color);
-  padding: 20px;
+  padding: 50px 20px;
 
 }
 
