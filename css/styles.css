@@ -89,7 +89,50 @@ h1.heading--main {
   background: #3b3e45;
 }
 
+.featured-speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+}
 
+.featured-speakers__card {
+  display: flex;
+  gap:  20px;
+  background-image: url('../assets/images/checkers.jpg');
+  background-repeat: no-repeat;
+  background-size: 20%;
+  padding: 20px;
+}
 
-.
+.featured-speakers__card h3.heading--secondary {
+  font-size: 20px;
+  font-weight: var(--bold);
+}
+
+.featured-speakers__card h5 {
+  color: var(--secondary-color);
+  font-style: italic;
+  font-size: var(--text-small);
+}
+
+.featured-speakers__card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured-speakers__card__details > h5.underline:after {
+  left: 20px;
+  bottom: -10px;
+  width: 40px;
+  height: 1px;
+  background: var(--tartiary-color);
+}
+
+.featured-speakers__card__details p {
+  font-size: var(--text-small);
+}
+
 
