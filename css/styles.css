@@ -184,6 +184,11 @@ h1.heading--main {
   header > nav > a.button--primary {
     display: block;
   }
+
+  header > nav > a.button--primary:hover {
+    background: var(--secondary-color);
+    color: #fff;
+  }
   
   header > nav > ul.menu {
     display: flex;
@@ -193,7 +198,7 @@ h1.heading--main {
   header nav {
     display: flex;
     gap: 40px;
-    padding:  10px 10%;
+    padding:  10px 15%;
     border-bottom: solid 1px var(--tartiary-color);
     background: #fff;
   }
@@ -226,8 +231,8 @@ h1.heading--main {
 
   .CTA {
     gap: 35px;
-    padding: 90px 10%;
-    width: 60%;
+    padding: 90px 15%;
+    width: 70%;
   }
 
   .paragraph-box {
@@ -238,17 +243,23 @@ h1.heading--main {
 
   .sessions {
     gap:  50px;
-    padding: 100px 30%;
+    padding: 100px 15%;
 
   }
   .session-cards {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2px;
   }
 
   .session-card {
     flex-direction: column;
-    width: 190px;
+    flex-basis: 200px;
+    border: solid 2px transparent;
+  }
+  .session-card:hover{
+    border: solid 2px var(--tartiary-color);
   }
 
   .session-card p {  
