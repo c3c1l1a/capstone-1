@@ -2,7 +2,7 @@ const data = [{
 		name: 'Wayan Istri Dewi',
 		picture: 'https://i.pravatar.cc/130?img=42', 
 		specialty: 'Istri Experince',
-		description: `Yana brings unique brand of Java blues to Bali. Her music is not very unique in sound as she designs her own instruments.`
+		description: `Istri brings unique brand of Java blues to Bali. Her music is not very unique in sound as she designs her own instruments.`
 	},{
 		name: 'Ibu Santi Teko',
 		picture: 'https://i.pravatar.cc/130?img=34', 
@@ -31,7 +31,7 @@ const data = [{
 	},
 ]
 
-function createSpeakerCard(item){
+function createSpeakerCard(item, index){
 	const templateSpeakers = document.querySelector('.js-template-speakers');
 	const speakerCard = templateSpeakers.content.firstElementChild.cloneNode(true);
 
@@ -48,16 +48,57 @@ function createSpeakerCard(item){
 	speakerDesription.textContent = item.description;
 
 	const templateSpeakersContainer = document.querySelector('.js-template-speakers-container');
+	const mediaQuery = window.matchMedia('(min-width: 768px)')
+	if (index >= 2 && !mediaQuery.matches){
+		speakerCard.classList.toggle('js-hide-speaker');
+		speakerCard.style.display = 'none';
+	}
 	templateSpeakersContainer.appendChild(speakerCard);
 }
 
 
 window.onload = () => {
   if ('content' in document.createElement('template')) {
-  	
-  	data.forEach((item) =>{
-  		createSpeakerCard(item);		
+  	data.forEach((item, index) =>{
+  		createSpeakerCard(item, index);		
   	});
+  	const hiddenSpeakers = document.getElementsByClassName('js-hide-speaker');
+  	if (hiddenSpeakers.length > 0){
+  		const speakersShowLessButton = document.querySelector('.js-speakers-show-less-button');
+  		const speakersShowMoreButton = document.querySelector('.js-speakers-show-more-button');
+
+  		speakersShowMoreButton.addEventListener('click', (event)=>{
+  			event.preventDefault();
+				
+				Array.from(hiddenSpeakers).forEach((item) => {
+					item.style.display = 'flex';
+					window.scrollBy({
+						top: 600,
+						left: 0,
+						behavior: 'smooth'
+					});
+				});
+				
+				speakersShowLessButton.style.display = 'flex';
+				speakersShowMoreButton.style.display = 'none'
+  		});
+
+  		speakersShowLessButton.addEventListener('click', (event) => {
+  			event.preventDefault();
+
+  			Array.from(hiddenSpeakers).forEach((item) => {
+					item.style.display = 'none';
+					window.scrollBy({
+						top: 0,
+						left: 0,
+						behavior: 'smooth'
+					});
+				});
+
+  			speakersShowLessButton.style.display = 'none';
+				speakersShowMoreButton.style.display = 'flex'
+  		})
+  	}
   }
 };
 

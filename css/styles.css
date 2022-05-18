@@ -188,7 +188,11 @@ h1.heading--main {
 
 .featured-speakers > a span.paragraph-normal {
   font-size: var(--text-small);
-  color: var(--tartiary-color);
+  color: var(--primary-color);
+}
+
+.speakers-show-less-button {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -309,6 +313,9 @@ h1.heading--main {
     grid-template-columns: 1fr 1fr;
   }
 
+  .featured-speakers > a {
+    display: none;
+  }
 
 }
 

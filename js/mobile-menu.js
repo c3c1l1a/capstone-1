@@ -8,7 +8,6 @@ hamburgerMenu.addEventListener('click', (event) => {
 		closeIcon.addEventListener('click', (event) => {
 			templateMobileMenu.parentNode.removeChild(mobileMenu);
 		});
-
 		document.querySelector('body').appendChild(mobileMenu);
 	}
 });
