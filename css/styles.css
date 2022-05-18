@@ -13,6 +13,7 @@
 @import url('elements/paragraph.css');
 @import url('elements/underline.css');
 @import url('elements/button.css');
+@import url('components/mobile-menu.css');
 
 
 header {
@@ -22,11 +23,11 @@ header {
   background-image: url('../assets/images/bg-mobile.png'); 
   background-position: center center;
   background-size: 100%;
-  padding: 50px 20px;
+  padding: 20px 20px 50px 20px;
 }
 
 header > nav > img.logo,
-header > nav > a.button--primary,
+header > nav > a.button--primary, 
 header > nav > ul.menu {
   display: none;
 }

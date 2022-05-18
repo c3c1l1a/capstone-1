@@ -11,7 +11,7 @@
   <header>
     <nav>
       <img class="logo" src="assets/icons/logo.svg" alt="Logo"> <!-- Placeholder logo from https://logoipsum.com-->
-      <i class="fa fa-bars fa-lg"></i>
+      <i class="fa fa-bars fa-lg js-humburger-menu-icon"></i>
       <ul class="menu">
         <li><a class="button--secondary" href="#">About</a></li>
         <li><a class="button--secondary" href="#">Program</a></li>
@@ -135,5 +135,18 @@
       </a>
     </section>
   </main>
+  <template class="js-template-mobile-menu">
+    <div class="mobile-menu">
+      <img class="close-icon" src="assets/icons/close.svg">
+      <ul class="mobile-menu__items js-menu">
+        <li><a class="" href="#">About</a></li>
+        <li><a class="" href="#">Program</a></li>
+        <li><a class="" href="#">Join</a></li>
+        <li><a class="" href="#">Sponsers</a></li>
+        <li><a class="" href="#">News</a></li>
+      </ul>
+    </div>
+  </template>
+  <script type="text/javascript" src="js/mobile-menu.js"></script>
 </body>
 </html>
