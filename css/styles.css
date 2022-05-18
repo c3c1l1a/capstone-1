@@ -90,6 +90,7 @@ h1.heading--main {
 .sessions p {
   color: #fff;
   font-size: var(--text-small);
+  line-height: 1.4em;
 }
 
 .sessions > a.underline:after {
@@ -112,16 +113,34 @@ h1.heading--main {
   padding: 20px;
 }
 
+.featured-speakers__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
 .featured-speakers__card {
   display: flex;
   gap:  20px;
 }
 
 .featured-speakers__img {
-  background-image: url('../assets/images/checkers.jpg');
+  position: relative;
+  background-color: transparent;
+  padding: 20px 0 0 20px;
+}
+
+.featured-speakers__img::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('../assets/images/speaker-bg-test.png');
   background-repeat: no-repeat;
   background-size: 80%;
-  padding: 20px 0 0 20px;
+  z-index: -1;
+  filter:  invert(100%) sepia(100%) saturate(0%) hue-rotate(67deg) brightness(106%) contrast(106%);
 }
 
 .featured-speakers__card h3.heading--secondary {
@@ -248,14 +267,12 @@ h1.heading--main {
   }
   .session-cards {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 2px;
   }
 
   .session-card {
     flex-direction: column;
-    flex-basis: 200px;
     border: solid 2px transparent;
   }
   .session-card:hover{
@@ -275,38 +292,19 @@ h1.heading--main {
     text-transform: uppercase;
   }
 
+  .featured-speakers{
+    padding: 20px 15%;
+  }
+
+  .featured-speakers__img::before {
+    filter: unset;
+  }
+
+  .featured-speakers__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
 }
 
-/*.sessions {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  background-color: var(--primary-color);
-  padding: 50px 20px;
-
-}
-
-.sessions h3 {
-  color: var(--tartiary-color);
-}
-
-.sessions img.yoga-icon {
-  filter: invert(81%) sepia(0%) saturate(0%) hue-rotate(89deg) brightness(105%) contrast(93%);
-  width: 40px;
-  height: 40px;
-}
-
-.sessions p {
-  color: #fff;
-  font-size: var(--text-small);
-}
-
-.session-card {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 10px;
-  background: #3b3e45;
-}
-*/
