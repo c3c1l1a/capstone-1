@@ -67,74 +67,15 @@
     </section>
     <section class="featured-speakers">
       <h3 class="heading--secondary underline">Featured speakers</h3>
-      <div class="featured-speakers__cards">
-        <div class="featured-speakers__card">
-          <div class="featured-speakers__img">
-            <img src="https://i.pravatar.cc/130?img=35" alt="Image of speaker"> <!-- Placehoder images from https://i.pravatar.cc-->
-          </div>
-          <div class="featured-speakers__card__details">
-            <h3 class="heading--secondary">Wayan Istri Dewi</h3>
-            <h5 class="heading--secondary underline">Master yogi</h5>
-            <p class="paragraph-normal">With decade of experience in yoga, Dewi will guide you through this journay</p>
-          </div>
-        </div>
-        <div class="featured-speakers__card">
-          <div class="featured-speakers__img">
-            <img src="https://i.pravatar.cc/130?img=38" alt="Image of speaker"> <!-- Placehoder images from https://i.pravatar.cc-->
-          </div>
-          <div class="featured-speakers__card__details">
-            <h3 class="heading--secondary">Wayan Istri Dewi</h3>
-            <h5 class="heading--secondary underline">Master yogi</h5>
-            <p class="paragraph-normal">With decade of experience in yoga, Dewi will guide you through this journay</p>
-          </div>
-        </div>
-        <div class="featured-speakers__card">
-          <div class="featured-speakers__img">
-            <img src="https://i.pravatar.cc/130?img=35" alt="Image of speaker"> <!-- Placehoder images from https://i.pravatar.cc-->
-          </div>
-          <div class="featured-speakers__card__details">
-            <h3 class="heading--secondary">Wayan Istri Dewi</h3>
-            <h5 class="heading--secondary underline">Master yogi</h5>
-            <p class="paragraph-normal">With decade of experience in yoga, Dewi will guide you through this journay</p>
-          </div>
-        </div>
-        <div class="featured-speakers__card">
-          <div class="featured-speakers__img">
-            <img src="https://i.pravatar.cc/130?img=38" alt="Image of speaker"> <!-- Placehoder images from https://i.pravatar.cc-->
-          </div>
-          <div class="featured-speakers__card__details">
-            <h3 class="heading--secondary">Wayan Istri Dewi</h3>
-            <h5 class="heading--secondary underline">Master yogi</h5>
-            <p class="paragraph-normal">With decade of experience in yoga, Dewi will guide you through this journay</p>
-          </div>
-        </div>
-        <div class="featured-speakers__card">
-          <div class="featured-speakers__img">
-            <img src="https://i.pravatar.cc/130?img=35" alt="Image of speaker"> <!-- Placehoder images from https://i.pravatar.cc-->
-          </div>
-          <div class="featured-speakers__card__details">
-            <h3 class="heading--secondary">Wayan Istri Dewi</h3>
-            <h5 class="heading--secondary underline">Master yogi</h5>
-            <p class="paragraph-normal">With decade of experience in yoga, Dewi will guide you through this journay</p>
-          </div>
-        </div>
-        <div class="featured-speakers__card">
-          <div class="featured-speakers__img">
-            <img src="https://i.pravatar.cc/130?img=38" alt="Image of speaker"> <!-- Placehoder images from https://i.pravatar.cc-->
-          </div>
-          <div class="featured-speakers__card__details">
-            <h3 class="heading--secondary">Wayan Istri Dewi</h3>
-            <h5 class="heading--secondary underline">Master yogi</h5>
-            <p class="paragraph-normal">With decade of experience in yoga, Dewi will guide you through this journay</p>
-          </div>
-        </div>
-      </div>
+      <div class="js-template-speakers-container featured-speakers__cards"></div>
       <a class="button--secondary" href="#">
         <span class="paragraph-normal">MORE</span>
         <img class="expand-icon" src="assets/icons/expand.svg" alt="Expand to see more Icon">
       </a>
     </section>
   </main>
+  
+  <!-- Mobile menu template -->
   <template class="js-template-mobile-menu">
     <div class="mobile-menu">
       <img class="close-icon" src="assets/icons/close.svg">
@@ -147,6 +88,24 @@
       </ul>
     </div>
   </template>
+
+  <!-- Speakers template -->
+  <template class="js-template-speakers">
+      <div class="featured-speakers__card">
+        <div class="featured-speakers__img">
+          <img class="js-speaker-pic" src="" alt="Image of speaker"> <!-- Placehoder images from https://i.pravatar.cc-->
+        </div>
+        <div class="featured-speakers__card__details">
+          <h3 class="heading--secondary js-speaker-name"></h3>
+          <h5 class="heading--secondary underline js-speaker-specialty"></h5>
+          <p class="paragraph-normal js-speaker-desription">With decade of experience in yoga, Dewi will guide you through this journay</p>
+        </div>
+      </div>
+  </template>
+
+
+
   <script type="text/javascript" src="js/mobile-menu.js"></script>
+  <script type="text/javascript" src="js/speakers.js"></script>
 </body>
 </html>

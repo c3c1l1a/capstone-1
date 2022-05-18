@@ -110,26 +110,29 @@ h1.heading--main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
   gap: 40px;
-  padding: 20px;
 }
 
 .featured-speakers__cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .featured-speakers__card {
   display: flex;
-  gap:  20px;
+  gap:  10px;
+  padding: 0 0 20px 0;
+  border-bottom: solid 0.5px #00000020;
+  
 }
 
 .featured-speakers__img {
   position: relative;
   background-color: transparent;
-  padding: 20px 0 0 20px;
+  padding: 10px 0 0 10px;
 }
 
 .featured-speakers__img::before {
