@@ -25,10 +25,11 @@ header {
   padding: 50px 20px;
 }
 
-header > nav > img.logo, a.button--primary, ul.menu {
-    display: none;
-  }
-
+header > nav > img.logo,
+header > nav > a.button--primary,
+header > nav > ul.menu {
+  display: none;
+}
 
 .CTA {
   display: flex;
@@ -65,13 +66,19 @@ h1.heading--main {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  background-color: var(--primary-color);
+  background-image: url('../assets/images/program-bg.jpeg');
   padding: 50px 20px;
 
 }
 
 .sessions h3 {
   color: var(--tartiary-color);
+}
+
+.session-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .sessions img.yoga-icon {
@@ -85,12 +92,16 @@ h1.heading--main {
   font-size: var(--text-small);
 }
 
+.sessions > a.underline:after {
+  display: none;
+}
+
 .session-card {
   display: flex;
   align-items: center;
   gap: 20px;
   padding: 20px 10px;
-  background: #3b3e45;
+  background: #3b3e4582;
 }
 
 .featured-speakers {
@@ -166,6 +177,19 @@ h1.heading--main {
     background-size: cover;
   }
 
+  header > nav > img.logo {
+    display: block;
+  }
+
+  header > nav > a.button--primary {
+    display: block;
+  }
+  
+  header > nav > ul.menu {
+    display: flex;
+  }
+
+
   header nav {
     display: flex;
     gap: 40px;
@@ -185,6 +209,7 @@ h1.heading--main {
   }
   
   header nav > ul {
+    display: flex;
     flex-grow: 4;
   }
 
@@ -211,5 +236,66 @@ h1.heading--main {
     border: solid 2px #fff;
   }
 
+  .sessions {
+    gap:  50px;
+    padding: 100px 30%;
+
+  }
+  .session-cards {
+    flex-direction: row;
+    gap: 2px;
+  }
+
+  .session-card {
+    flex-direction: column;
+    width: 190px;
+  }
+
+  .session-card p {  
+    text-align: center;
+  }
+
+  .sessions > a.button--primary {
+    color: #fff;
+    background: none;
+    border: none;
+    border-bottom: solid 1px var(--tartiary-color);
+    padding: 5px 0;
+    text-transform: uppercase;
+  }
+
 }
 
+/*.sessions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--primary-color);
+  padding: 50px 20px;
+
+}
+
+.sessions h3 {
+  color: var(--tartiary-color);
+}
+
+.sessions img.yoga-icon {
+  filter: invert(81%) sepia(0%) saturate(0%) hue-rotate(89deg) brightness(105%) contrast(93%);
+  width: 40px;
+  height: 40px;
+}
+
+.sessions p {
+  color: #fff;
+  font-size: var(--text-small);
+}
+
+.session-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 10px;
+  background: #3b3e45;
+}
+*/
