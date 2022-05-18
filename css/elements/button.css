@@ -28,7 +28,28 @@
 
 @media (min-width: 768px) {
   .button--primary {
-    justify-content: space-between;
-    width: 268px;
+    background: #fff;
+    color: var(--secondary-color);
+    border: solid 1px var(--secondary-color);
+    padding: 10px;
+    width: fit-content;
+    font-size: var(--text-small);
+    font-weight: var(--bold);
+    }
+
+  .button--secondary {
+    width: fit-content;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    font-size: var(--text-small);
+    font-weight: var(--bold);
   }
+
+  .button--secondary:hover {
+    color: var(--secondary-color);
+    font-size: var(--text-small);
+  }
+
+
 }

@@ -33,3 +33,18 @@
 	font-family: var(--secondary-font-family);
 	font-size: var(--text-medium);
 }
+
+@media (min-width: 768px) {
+	.heading--main {
+		font-size: var(--text-xx-large);
+		font-weight: var(--bold);
+	}
+
+	.heading-quote {
+		font-size: 40px;	
+	}
+
+	.heading-date {
+		font-size: var(--text-large);
+	}
+}

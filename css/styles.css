@@ -19,7 +19,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-image: url('../assets/images/bg-mobile-1.png'); 
+  background-image: url('../assets/images/bg-mobile.png'); 
   background-position: center center;
   background-size: 100%;
   padding: 50px 20px;
@@ -151,5 +151,61 @@ h1.heading--main {
 .featured-speakers > a span.paragraph-normal {
   font-size: var(--text-small);
   color: var(--tartiary-color);
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 0;
+    gap: 0;
+    background-image: url('../assets/images/bg-desktop.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header nav {
+    display: flex;
+    gap: 40px;
+    padding:  10px 10%;
+    border-bottom: solid 1px var(--tartiary-color);
+    background: #fff;
+  }
+
+
+  header img.logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  header > nav > i.fa {
+    display: none;
+  }
+  
+  header nav > ul {
+    flex-grow: 4;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 40px;
+  }
+
+  nav > a.button--primary {
+    border-width: 4px;
+  }
+
+  .CTA {
+    gap: 35px;
+    padding: 90px 10%;
+    width: 60%;
+  }
+
+  .paragraph-box {
+    padding: 30px;
+    background: #f7f7f7;
+    border: solid 2px #fff;
+  }
+
 }
 
