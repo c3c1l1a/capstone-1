@@ -25,6 +25,10 @@ header {
   padding: 50px 20px;
 }
 
+header > nav > img.logo, a.button--primary, ul.menu {
+    display: none;
+  }
+
 
 .CTA {
   display: flex;
