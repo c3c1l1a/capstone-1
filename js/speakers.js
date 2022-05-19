@@ -57,8 +57,9 @@ function createSpeakerCard(item, index){
 }
 
 
-window.onload = () => {
+window.addEventListener('load', () => {
   if ('content' in document.createElement('template')) {
+  	console.log('speakers');
   	data.forEach((item, index) =>{
   		createSpeakerCard(item, index);		
   	});
@@ -100,5 +101,9 @@ window.onload = () => {
   		})
   	}
   }
-};
+});
+
+
+
+
 
