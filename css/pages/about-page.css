@@ -1,5 +1,5 @@
 .about-page-intro {
-	display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
@@ -44,6 +44,7 @@
   width: 100%;
   padding: 0;
 }
+
 .story-section iframe.bali-spirit-story-video {
   width: calc(100vw - 40px);
   height: 53vw;
@@ -58,11 +59,10 @@
   text-align: center;
 }
 
-.story-section h3.heading--secondary {
+.story-section h3 {
   color: var(--primary-color);
   font-size: var(--text-large);
   text-align: center;
-  background-image: red;
 }
 
 .story-section div.paragraph-box {
@@ -75,7 +75,7 @@
   gap: 20px;
   align-items: center;
   background-color: #fff;
-  border-top:  solid 3px var(--tartiary-color);
+  border-top: solid 3px var(--tartiary-color);
   padding: 70px 20px;
 }
 
@@ -91,6 +91,7 @@
 .previous-events p.paragraph-normal {
   text-align: center;
 }
+
 .previous-events img {
   width: 100%;
 }
@@ -104,9 +105,7 @@
 .image-box {
   position: relative;
   width: fit-content;
-  height: fit-content;
 }
-
 
 .image-box .image-overlay {
   position: absolute;
@@ -119,7 +118,7 @@
   z-index: 10;
 }
 
-.image-box  div.overlay-text {
+.image-box div.overlay-text {
   position: absolute;
   color: #fff;
   z-index: 20;
@@ -129,7 +128,7 @@
   width: fit-content;
 }
 
-.overlay-text  h3 {
+.overlay-text h3 {
   font-family: var(--secondary-font-family);
   font-weight: var(--bold);
   color: #fff;
@@ -140,16 +139,11 @@
   color: #fff;
 }
 
-
-
-
-
-
 @media (min-width: 768px) {
   .about-page-intro {
     gap: 50px;
     padding: 70px;
-    background-image: url('../../assets/images/bg-about-dektop.png'); 
+    background-image: url('../../assets/images/bg-about-dektop.png');
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 100%;
@@ -176,8 +170,8 @@
   .story-section div.video-container {
     width: fit-content;
     padding: 0;
-
   }
+
   .story-section iframe.bali-spirit-story-video {
     width: calc(53vw - 40px);
     height: 29vw;

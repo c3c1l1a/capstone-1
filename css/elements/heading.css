@@ -1,50 +1,49 @@
 .heading-quote {
-	color: var(--secondary-color);
-	font-family: var(--primary-font-family);
-	font-weight: var(--normal);
-	font-size: var(--text-large);
+  color: var(--secondary-color);
+  font-family: var(--primary-font-family);
+  font-weight: var(--normal);
+  font-size: var(--text-large);
 }
 
 .heading-date {
-	color: var(--primary-color) rgb(0, 0, 0, 0.5);
-	font-family: var(--secondary-font-family);	
-	font-weight: var(--bold);
-	font-size: 25px;
-	opacity: 0.6;
-
+  color: var(--primary-color) rgb(0, 0, 0, 0.5);
+  font-family: var(--secondary-font-family);
+  font-weight: var(--bold);
+  font-size: 25px;
+  opacity: 0.6;
 }
 
 .heading--main {
-	color: var(--secondary-color);
-	font-family: var(--secondary-font-family);	
-	font-weight: var(--xtra-bold);
-	font-size: var(--text-x-large);
+  color: var(--secondary-color);
+  font-family: var(--secondary-font-family);
+  font-weight: var(--xtra-bold);
+  font-size: var(--text-x-large);
 }
 
 .heading--secondary {
-	color: var(--primary-color);
-	font-family: var(--primary-font-family);	
-	font-weight: var(--normal);
-	font-size: var(--text-large);
+  color: var(--primary-color);
+  font-family: var(--primary-font-family);
+  font-weight: var(--normal);
+  font-size: var(--text-large);
 }
 
 .heading--tartiary {
-	color: var(--secondary-color);
-	font-family: var(--secondary-font-family);
-	font-size: var(--text-medium);
+  color: var(--secondary-color);
+  font-family: var(--secondary-font-family);
+  font-size: var(--text-medium);
 }
 
 @media (min-width: 768px) {
-	.heading--main {
-		font-size: var(--text-xx-large);
-		font-weight: var(--bold);
-	}
+  .heading--main {
+    font-size: var(--text-xx-large);
+    font-weight: var(--bold);
+  }
 
-	.heading-quote {
-		font-size: 40px;	
-	}
+  .heading-quote {
+    font-size: 40px;
+  }
 
-	.heading-date {
-		font-size: var(--text-large);
-	}
+  .heading-date {
+    font-size: var(--text-large);
+  }
 }

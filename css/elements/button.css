@@ -24,8 +24,6 @@
   border: solid 2px var(--primary-color);
 }
 
-
-
 @media (min-width: 768px) {
   .button--primary {
     background: #fff;
@@ -35,7 +33,7 @@
     width: fit-content;
     font-size: var(--text-small);
     font-weight: var(--bold);
-    }
+  }
 
   .button--secondary {
     width: fit-content;
@@ -50,6 +48,4 @@
     color: var(--secondary-color);
     font-size: var(--text-small);
   }
-
-
 }

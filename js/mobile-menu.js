@@ -42,9 +42,7 @@ hamburgerMenu.addEventListener('click', (event) => {
 				addSpeakerCardWithData();
 			}
 			mobileMenu.parentNode.removeChild(mobileMenu);
-
 		});
-
 		document.querySelector('body').appendChild(mobileMenu);
 	}
 });
