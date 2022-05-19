@@ -1,0 +1,110 @@
+.about-page-intro {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 20px;
+}
+
+.about-page-intro h1.heading--main {
+  text-align: center;
+}
+
+.about-page-intro div.paragraph-box {
+  background: #fff;
+  border: solid 1px var(--tartiary-color);
+}
+
+.about-page-intro p {
+  text-align: center;
+}
+
+.about-page-intro h4.heading--tartiary {
+  color: var(--primary-color);
+  font-size: var(--text-small);
+}
+
+.about-page-intro div.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.story-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.story-section div.video-container {
+  width: 100%;
+  padding: 0;
+}
+.story-section iframe.bali-spirit-story-video {
+  width: calc(100vw - 40px);
+  height: 53vw;
+}
+
+.story-section .paragraph-box {
+  border: solid 1px var(--tartiary-color);
+  background-color: #fff;
+}
+
+.story-section p {
+  text-align: center;
+}
+
+.story-section h3.heading--secondary {
+  color: var(--primary-color);
+  font-size: var(--text-large);
+  text-align: center;
+  background-image: red;
+}
+
+.story-section div.paragraph-box {
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .about-page-intro {
+    gap: 50px;
+    padding: 70px;
+    background-image: url('../../assets/images/bg-about-dektop.png'); 
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+    background-color: var(--tartiary-color);
+  }
+
+  .about-page-intro h1.heading--main {
+    font-size: var(--text-x-large);
+    width: 30vw;
+  }
+
+  .about-page-intro div.paragraph-box {
+    width: 53vw;
+  }
+
+  .story-section {
+    padding: 70px;
+  }
+
+  .story-section div.paragraph-box {
+    width: 53vw;
+  }
+
+  .story-section div.video-container {
+    width: fit-content;
+    padding: 0;
+
+  }
+  .story-section iframe.bali-spirit-story-video {
+    width: calc(53vw - 40px);
+    height: 29vw;
+    margin: 0 auto;
+  }
+}
