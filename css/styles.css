@@ -15,14 +15,16 @@
 @import url('elements/button.css');
 @import url('components/mobile-menu.css');
 
+body {
+  background-image: url('../assets/images/bg-mobile.png'); 
+  background-position: top center;
+  background-size: 125%;
+}
 
 header {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  background-image: url('../assets/images/bg-mobile.png'); 
-  background-position: center center;
-  background-size: 100%;
   padding: 20px 20px 50px 20px;
 }
 
@@ -36,9 +38,10 @@ header > nav > ul.menu {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding: 50px 20px;
 }
 
-h1.heading--main {
+.CTA h1.heading--main {
   background: url('../assets/images/fire.jpg') no-repeat; /* Photo by Pixabay: https://www.pexels.com/photo/flare-of-fire-on-wood-with-black-smokes-57461/ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -196,12 +199,13 @@ h1.heading--main {
 }
 
 @media (min-width: 768px) {
+  body {
+    background: none;
+  }
+
   header {
     padding: 0;
     gap: 0;
-    background-image: url('../assets/images/bg-desktop.png'); 
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   header > nav > img.logo {
@@ -259,13 +263,21 @@ h1.heading--main {
   .CTA {
     gap: 35px;
     padding: 90px 15%;
-    width: 70%;
+    background-image: url('../assets/images/bg-desktop.png'); 
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .CTA h1.heading--main {
+    width: 40vw;
   }
 
   .paragraph-box {
     padding: 30px;
     background: #f7f7f7;
     border: solid 2px #fff;
+    width: 60%;
   }
 
   .sessions {
