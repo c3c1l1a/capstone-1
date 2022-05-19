@@ -13,76 +13,18 @@
       <img class="logo" src="assets/icons/logo.svg" alt="Logo"> <!-- Placeholder logo from https://logoipsum.com-->
       <i class="fa fa-bars fa-lg js-humburger-menu-icon"></i>
       <ul class="menu">
-        <li><a class="button--secondary" href="#">About</a></li>
-        <li><a class="button--secondary" href="#">Program</a></li>
-        <li><a class="button--secondary" href="#">Join</a></li>
-        <li><a class="button--secondary" href="#">Sponsers</a></li>
-        <li><a class="button--secondary" href="#">News</a></li>
+        <li><a class="button--secondary js-home-page-link" href="#">Home</a></li>
+        <li><a class="button--secondary js-about-page-link" href="#">About</a></li>
       </ul>
       <a class="button--primary" href="#">Book a date</a>
     </nav>
   </header>
   <main>
-    <section class="about-page-intro">
-      <h2 class="heading-quote">"3 days and 3 nights!"</h2>
-      <h1 class="heading--main">BALI SPIRIT FESTIVAL 2022</h1>
-      <div class="paragraph-box">
-        <p class="paragraph-normal">The goal of the BaliSpirit Festival is to awaken and nourish each individual’s potential for positive change within, leading to positive change in our homes, in our communities, and around the world. &#10; &#10; Through the beneficial and inspirational traditions of Yoga, Dance, and Music, the BaliSpirit Festival embodies the Balinese Hindu concept of Tri Hita Karana: living in harmony with our spiritual, social, and natural environments. </p> <!-- content from bali spirit festical website -->
-      </div>
-      <div class="contact-info">
-        <p class="paragraph-normal">Please contact us via the Email below of you have any questions about Bali Spirit Festival</p>
-        <h4 class="heading--tartiary">info@bali-spirit-ubud.com</h4>  
-      </div>
-    </section>
-
-    <section class="story-section">
-      <h3 class="heading--secondary underline">THE BALISPIRIT FESTIVAL STORY</h3>
-      <div class="paragraph-box">
-        <p class="paragraph-normal">In 2008 the idea was born to create a global community gathering of cultures coming together in Bali for inspiration to make the world a better place. </p> <!-- Content from Bali spirit festival website -->
-      </div>
-      <div class="video-container">
-        <iframe class="bali-spirit-story-video" 
-                src="https://www.youtube.com/embed/9pJIwR5O5_M" 
-                title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>  
-        </iframe> <!-- Video From Bali Shakti Sundari youtube channel -->
-      </div>
-    </section>
-
-    <section class="previous-events">
-      <h3 class="heading--secondary underline">Previous events</h3>
-      <div class="paragraph-box">
-        <p class="paragraph-normal">In 2008 the idea was born to create a global community gathering of cultures coming together in Bali for inspiration to make the world a better place. </p> <!-- Content from Bali spirit festival website -->
-      </div>
-      <div class="image-container">
-        <div class="image-box">
-          <div class="image-overlay"></div>
-          <div class="overlay-text">
-            <h3 class="heading--secondary">2021</h3>
-            <p class="paragraph-normal">Nusa Penida</p>
-          </div>
-          
-          <img src="assets/images/about-page-pic-1.jpg" alt="Picture of Balinese dancers"> 
-          <!--- Photo by Aditya Agarwal: https://www.pexels.com/photo/two-women-dancing-while-wearing-dresses-at-night-time-1477310/-->
-        </div>
-        <div class="image-box">
-          <div class="image-overlay"></div>
-          <div class="overlay-text">
-            <h3 class="heading--secondary">2021</h3>
-            <p class="paragraph-normal">Canggu</p>
-          </div>
-          
-          <img src="assets/images/about-page-pic-2.jpg" alt="Picture of Balinese dancers"> 
-          <!-- Photo by Wendy Wei from Pexels -->
-        </div>
-      </div>
-
-    </section>
   </main>
 
   <!-- Home page template -->
   <template class="js-template-home-page">
-    <div>
+    <div class="js-home-page">
       <section class="CTA">
         <h2 class="heading-quote">"3 days and 3 nights!"</h2>
         <h1 class="heading--main">BALI SPIRIT FESTIVAL 2022</h1>
@@ -139,17 +81,72 @@
       </section>
     </div>
   </template>
+
+  <!-- About page template --->
+  <template class="js-template-about-page">
+    <div class="js-about-page">
+      <section class="about-page-intro">
+        <h2 class="heading-quote">"3 days and 3 nights!"</h2>
+        <h1 class="heading--main">BALI SPIRIT FESTIVAL 2022</h1>
+        <div class="paragraph-box">
+          <p class="paragraph-normal">The goal of the BaliSpirit Festival is to awaken and nourish each individual’s potential for positive change within, leading to positive change in our homes, in our communities, and around the world. &#10; &#10; Through the beneficial and inspirational traditions of Yoga, Dance, and Music, the BaliSpirit Festival embodies the Balinese Hindu concept of Tri Hita Karana: living in harmony with our spiritual, social, and natural environments. </p> <!-- content from bali spirit festical website -->
+        </div>
+        <div class="contact-info">
+          <p class="paragraph-normal">Please contact us via the Email below of you have any questions about Bali Spirit Festival</p>
+          <h4 class="heading--tartiary">info@bali-spirit-ubud.com</h4>  
+        </div>
+      </section>
+      <section class="story-section">
+        <h3 class="heading--secondary underline">THE BALISPIRIT FESTIVAL STORY</h3>
+        <div class="paragraph-box">
+          <p class="paragraph-normal">In 2008 the idea was born to create a global community gathering of cultures coming together in Bali for inspiration to make the world a better place. </p> <!-- Content from Bali spirit festival website -->
+        </div>
+        <div class="video-container">
+          <iframe class="bali-spirit-story-video" 
+                  src="https://www.youtube.com/embed/9pJIwR5O5_M" 
+                  title="YouTube video player" 
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>  
+          </iframe> <!-- Video From Bali Shakti Sundari youtube channel -->
+        </div>
+      </section>
+      <section class="previous-events">
+        <h3 class="heading--secondary underline">Previous events</h3>
+        <div class="paragraph-box">
+          <p class="paragraph-normal">In 2008 the idea was born to create a global community gathering of cultures coming together in Bali for inspiration to make the world a better place. </p> <!-- Content from Bali spirit festival website -->
+        </div>
+        <div class="image-container">
+          <div class="image-box">
+            <div class="image-overlay"></div>
+            <div class="overlay-text">
+              <h3 class="heading--secondary">2021</h3>
+              <p class="paragraph-normal">Nusa Penida</p>
+            </div>
+            
+            <img src="assets/images/about-page-pic-1.jpg" alt="Picture of Balinese dancers"> 
+            <!--- Photo by Aditya Agarwal: https://www.pexels.com/photo/two-women-dancing-while-wearing-dresses-at-night-time-1477310/-->
+          </div>
+          <div class="image-box">
+            <div class="image-overlay"></div>
+            <div class="overlay-text">
+              <h3 class="heading--secondary">2021</h3>
+              <p class="paragraph-normal">Canggu</p>
+            </div>
+            
+            <img src="assets/images/about-page-pic-2.jpg" alt="Picture of Balinese dancers"> 
+            <!-- Photo by Wendy Wei from Pexels -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </template>
   
   <!-- Mobile menu template -->
   <template class="js-template-mobile-menu">
     <div class="mobile-menu">
       <img class="close-icon" src="assets/icons/close.svg">
       <ul class="mobile-menu__items js-menu">
-        <li><a class="" href="#">About</a></li>
-        <li><a class="" href="#">Program</a></li>
-        <li><a class="" href="#">Join</a></li>
-        <li><a class="" href="#">Sponsers</a></li>
-        <li><a class="" href="#">News</a></li>
+        <li><a class="js-home-page-link" href="#">Home</a></li>
+        <li><a class="js-about-page-link" href="#">About</a></li>
       </ul>
     </div>
   </template>
@@ -168,9 +165,10 @@
       </div>
   </template>
 
-  <!--<script type="text/javascript" src="js/pages.js"></script>
+  <script type="text/javascript" src="js/home-page.js"></script>
+  <script type="text/javascript" src="js/about-page.js"></script>
   <script type="text/javascript" src="js/mobile-menu.js"></script>
-  <script type="text/javascript" src="js/speakers.js"></script>-->
+  <script type="text/javascript" src="js/speakers.js"></script>
   
 </body>
 </html>

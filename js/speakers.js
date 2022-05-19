@@ -47,28 +47,33 @@ function createSpeakerCard(item, index){
 	const speakerDesription = speakerCard.querySelector('.js-speaker-desription');
 	speakerDesription.textContent = item.description;
 
-	const templateSpeakersContainer = document.querySelector('.js-template-speakers-container');
 	const mediaQuery = window.matchMedia('(min-width: 768px)')
 	if (index >= 2 && !mediaQuery.matches){
 		speakerCard.classList.toggle('js-hide-speaker');
 		speakerCard.style.display = 'none';
 	}
-	templateSpeakersContainer.appendChild(speakerCard);
+
+	const homePage = document.querySelector('.js-home-page');
+	if (homePage !== null){
+		const templateSpeakersContainer = document.querySelector('.js-template-speakers-container');
+		templateSpeakersContainer.appendChild(speakerCard);
+	}
+	
 }
 
+function addSpeakerCardWithData(){
+	if ('content' in document.createElement('template')) {
+		data.forEach((item, index) =>{
+			createSpeakerCard(item, index);		
+		});
 
-window.addEventListener('load', () => {
-  if ('content' in document.createElement('template')) {
-  	data.forEach((item, index) =>{
-  		createSpeakerCard(item, index);		
-  	});
-  	const hiddenSpeakers = document.getElementsByClassName('js-hide-speaker');
-  	if (hiddenSpeakers.length > 0){
-  		const speakersShowLessButton = document.querySelector('.js-speakers-show-less-button');
-  		const speakersShowMoreButton = document.querySelector('.js-speakers-show-more-button');
+		const hiddenSpeakers = document.getElementsByClassName('js-hide-speaker');
+		if (hiddenSpeakers.length > 0){
+			const speakersShowLessButton = document.querySelector('.js-speakers-show-less-button');
+			const speakersShowMoreButton = document.querySelector('.js-speakers-show-more-button');
 
-  		speakersShowMoreButton.addEventListener('click', (event)=>{
-  			event.preventDefault();
+			speakersShowMoreButton.addEventListener('click', (event)=>{
+				event.preventDefault();
 				
 				Array.from(hiddenSpeakers).forEach((item) => {
 					item.style.display = 'flex';
@@ -81,12 +86,12 @@ window.addEventListener('load', () => {
 				
 				speakersShowLessButton.style.display = 'flex';
 				speakersShowMoreButton.style.display = 'none'
-  		});
+			});
 
-  		speakersShowLessButton.addEventListener('click', (event) => {
-  			event.preventDefault();
+			speakersShowLessButton.addEventListener('click', (event) => {
+				event.preventDefault();
 
-  			Array.from(hiddenSpeakers).forEach((item) => {
+				Array.from(hiddenSpeakers).forEach((item) => {
 					item.style.display = 'none';
 					window.scrollBy({
 						top: 0,
@@ -95,12 +100,26 @@ window.addEventListener('load', () => {
 					});
 				});
 
-  			speakersShowLessButton.style.display = 'none';
+				speakersShowLessButton.style.display = 'none';
 				speakersShowMoreButton.style.display = 'flex'
-  		})
-  	}
-  }
+			});
+		}
+	}
+
+}
+
+
+window.addEventListener('load', () => {
+	addSpeakerCardWithData();
+
+	const homePagetLink = document.querySelector('.js-home-page-link');
+	homePagetLink.addEventListener('click', (event)=>{
+		const speakerCard = document.querySelector('.featured-speakers__card');
+		if (speakerCard === null )
+			addSpeakerCardWithData();	
+	});
 });
+
 
 
 

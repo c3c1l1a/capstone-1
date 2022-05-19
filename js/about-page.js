@@ -1,17 +1,8 @@
-let hamburgerMenu = document.querySelector('.js-humburger-menu-icon');
-hamburgerMenu.addEventListener('click', (event) => {
+window.addEventListener('load', () => {
 	if ('content' in document.createElement('template')) {
-		const templateMobileMenu = document.querySelector('.js-template-mobile-menu');
-		const mobileMenu = templateMobileMenu.content.firstElementChild.cloneNode(true);
 		
-		const closeIcon = mobileMenu.querySelector('.close-icon');
-		closeIcon.addEventListener('click', (event) => {
-			mobileMenu.parentNode.removeChild(mobileMenu);
-		});
-
-
-		const aboutPagetLink = mobileMenu.querySelector('.js-about-page-link');
-		aboutPagetLink.addEventListener('click', () => {
+		const aboutPageLink = document.querySelector('.js-about-page-link');
+		aboutPageLink.addEventListener('click', () => {
 			const homePage = document.querySelector('.js-home-page');
 			if (homePage)
 				homePage.parentNode.removeChild(homePage);
@@ -20,14 +11,13 @@ hamburgerMenu.addEventListener('click', (event) => {
 			if (aboutPage === null){
 				const templateAboutPage = document.querySelector('.js-template-about-page');
 				const aboutPage = templateAboutPage.content.firstElementChild.cloneNode(true);
+				
 				const mainTag = document.querySelector('main');
 				mainTag.appendChild(aboutPage);
 			}
-			mobileMenu.parentNode.removeChild(mobileMenu);
-			
 		});
 
-		const homePagetLink = mobileMenu.querySelector('.js-home-page-link');
+		const homePagetLink = document.querySelector('.js-home-page-link');
 		homePagetLink.addEventListener( 'click',  ()=> {
 			const aboutPage = document.querySelector('.js-about-page');
 			if (aboutPage)
@@ -39,13 +29,8 @@ hamburgerMenu.addEventListener('click', (event) => {
 				const aboutPage = templateHomePage.content.firstElementChild.cloneNode(true);
 				const mainTag = document.querySelector('main');
 				mainTag.appendChild(aboutPage);
-				addSpeakerCardWithData();
 			}
-			mobileMenu.parentNode.removeChild(mobileMenu);
 
 		});
-
-		document.querySelector('body').appendChild(mobileMenu);
 	}
 });
-
