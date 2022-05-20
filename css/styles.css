@@ -16,7 +16,7 @@
 @import url('elements/paragraph-box.css');
 
 /* Components  */
-@import url('components/mobile-menu.css');
+@import url('components/navbar.css');
 
 /* Page styles */
 @import url('pages/about-page.css');
@@ -34,11 +34,6 @@ header {
   padding: 20px 20px 50px 20px;
 }
 
-header > nav > img.logo,
-header > nav > a.button--primary,
-header > nav > ul.menu {
-  display: none;
-}
 
 .CTA {
   display: flex;
@@ -206,56 +201,6 @@ header > nav > ul.menu {
   header {
     padding: 0;
     gap: 0;
-  }
-
-  nav > a.button--primary {
-    border-width: 4px;
-  }
-
-  header > nav > a.button--primary {
-    display: block;
-  }
-
-  header > nav > a.button--primary:hover {
-    background: var(--secondary-color);
-    color: #fff;
-  }
-
-  header > nav > ul.menu {
-    display: flex;
-  }
-
-  header nav {
-    display: flex;
-    gap: 40px;
-    padding: 10px 15%;
-    border-bottom: solid 1px var(--tartiary-color);
-    background: #fff;
-  }
-
-  header img.logo {
-    width: 40px;
-    height: 40px;
-  }
-
-  header > nav > img.logo {
-    display: block;
-  }
-
-  header > nav > i.fa {
-    display: none;
-  }
-
-  header nav > ul {
-    display: flex;
-    flex-grow: 4;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: 40px;
   }
 
   .CTA {

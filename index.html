@@ -10,13 +10,22 @@
 <body>
   <header>
     <nav>
-      <img class="logo" src="assets/icons/logo.svg" alt="Logo"> <!-- Placeholder logo from https://logoipsum.com-->
-      <i class="fa fa-bars fa-lg js-humburger-menu-icon"></i>
-      <ul class="menu">
-        <li><a class="button--secondary js-home-page-link" href="#">Home</a></li>
-        <li><a class="button--secondary js-about-page-link" href="#">About</a></li>
-      </ul>
-      <a class="button--primary" href="#">Book a date</a>
+      <div class="social-links">
+        <a href="https://www.facebook.com/BaliSpiritFestival/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/balispiritfest"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#">Logout</a>
+        <a href="#">My page</a>
+        <a href="#">Indonesian</a>
+      </div>
+      <div class="pagelinks">
+        <img class="logo" src="assets/icons/logo.svg" alt="Logo"> <!-- Placeholder logo from https://logoipsum.com-->
+        <i class="fa fa-bars fa-lg hamburger-icon js-humburger-menu-icon"></i>
+        <ul class="pagelinks-desktop">
+          <li><a class="button--secondary js-home-page-link" href="#">Home</a></li>
+          <li><a class="button--secondary js-about-page-link" href="#">About</a></li>
+        </ul>
+        <a class="button--primary nav-CTA" href="#">Book a date</a>
+      </div>
     </nav>
   </header>
   <main>
@@ -142,9 +151,9 @@
   
   <!-- Mobile menu template -->
   <template class="js-template-mobile-menu">
-    <div class="mobile-menu">
+    <div class="pagelinks-mobile">
       <img class="close-icon" src="assets/icons/close.svg">
-      <ul class="mobile-menu__items js-menu">
+      <ul class="pagelinks-mobile__items js-menu">
         <li><a class="js-home-page-link" href="#">Home</a></li>
         <li><a class="js-about-page-link" href="#">About</a></li>
       </ul>
