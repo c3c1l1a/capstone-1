@@ -4,6 +4,7 @@
 
 ## Link to live 
 The project is deployed [here](https://c3c1l1a.github.io/capstone-1/), if you want to see it in action.
+Here is a [link](https://drive.google.com/file/d/1614QUw6ersZwe764N8aZlOOqJO4rfMLT/view?usp=sharing) Presentation of how implemented the project. 
 
 ## [](https://github.com/c3c1l1a/c3c1l1a.github.io#built-with)Built With
 -   HTML
