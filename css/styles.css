@@ -17,9 +17,11 @@
 
 /* Components  */
 @import url('components/navbar.css');
+@import url('components/footer.css');
 
 /* Page styles */
 @import url('pages/about-page.css');
+
 
 body {
   background-image: url('../assets/images/bg-mobile.png');
@@ -107,7 +109,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 50px 10px;
   gap: 40px;
 }
 
