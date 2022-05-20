@@ -22,7 +22,6 @@
 /* Page styles */
 @import url('pages/about-page.css');
 
-
 body {
   background-image: url('../assets/images/bg-mobile.png');
   background-position: top center;
@@ -35,7 +34,6 @@ header {
   gap: 50px;
   padding: 20px 20px 50px 20px;
 }
-
 
 .CTA {
   display: flex;

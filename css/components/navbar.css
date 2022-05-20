@@ -16,7 +16,7 @@
 
 
 /* Mobile navigation with close icon */
-.pagelinks-mobile{
+.pagelinks-mobile {
   position: fixed;
   top: 0;
   left: 0;
@@ -45,14 +45,12 @@
   gap: 20px;
 }
 
-.pagelinks-mobile__items  a {
+.pagelinks-mobile__items a {
   color: var(--primary-color);
   text-decoration: none;
   font: var(--text-medium) var(--primary-font-family);
   font-weight: var(--normal);
 }
-
-
 
 @media (min-width: 768px) {
   nav {
@@ -68,7 +66,7 @@
     align-items: center;
     gap: 30px;
     color: #fff;
-    padding:  10px 15%;
+    padding: 10px 15%;
     background-color: var(--primary-color);
   }
 
@@ -80,7 +78,7 @@
 
   .pagelinks {
     display: flex;
-    padding: 10px 15%; 
+    padding: 10px 15%;
   }
 
   .logo {
@@ -111,4 +109,3 @@
     color: #fff;
   }
 }
-
