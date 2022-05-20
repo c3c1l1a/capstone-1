@@ -1,0 +1,275 @@
+/* Fonts */
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/Lato");
+
+/* Reset */
+@import url('reset.css');
+
+/* Theme */
+@import url('theme.css');
+
+/* Elementnts */
+@import url('elements/heading.css');
+@import url('elements/paragraph.css');
+@import url('elements/underline.css');
+@import url('elements/button.css');
+@import url('elements/paragraph-box.css');
+
+/* Components  */
+@import url('components/navbar.css');
+@import url('components/footer.css');
+
+/* Page styles */
+@import url('pages/about-page.css');
+
+body {
+  background-image: url('../assets/images/bg-mobile.png');
+  background-position: top center;
+  background-size: 125%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px 20px 50px 20px;
+}
+
+.CTA {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 50px 20px;
+}
+
+.CTA h1.heading--main {
+  background: url('../assets/images/fire.jpg') no-repeat; /* Photo by Pixabay: https://www.pexels.com/photo/flare-of-fire-on-wood-with-black-smokes-57461/ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CTA > .date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.CTA > .date p.paragraph-normal {
+  opacity: 0.8;
+}
+
+.sessions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-image: url('../assets/images/program-bg.jpeg');
+  padding: 50px 20px;
+}
+
+.sessions h3 {
+  color: var(--tartiary-color);
+}
+
+.session-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sessions img.yoga-icon {
+  filter: invert(81%) sepia(0%) saturate(0%) hue-rotate(89deg) brightness(105%) contrast(93%);
+  width: 40px;
+  height: 40px;
+}
+
+.sessions p {
+  color: #fff;
+  font-size: var(--text-small);
+  line-height: 1.4em;
+}
+
+.sessions > a.underline::after {
+  display: none;
+}
+
+.session-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 10px;
+  background: #3b3e4582;
+}
+
+.featured-speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10px;
+  gap: 40px;
+}
+
+.featured-speakers__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.featured-speakers__card {
+  display: flex;
+  gap: 10px;
+  padding: 0 0 20px 0;
+  border-bottom: solid 0.5px #00000020;
+}
+
+.featured-speakers__img {
+  position: relative;
+  background-color: transparent;
+  padding: 10px 0 0 10px;
+}
+
+.featured-speakers__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/images/speaker-bg-test.png');
+  background-repeat: no-repeat;
+  background-size: 80%;
+  z-index: -1;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(67deg) brightness(106%) contrast(106%);
+}
+
+.featured-speakers__card h3.heading--secondary {
+  font-size: 20px;
+  font-weight: var(--bold);
+}
+
+.featured-speakers__card h5 {
+  color: var(--secondary-color);
+  font-style: italic;
+  font-size: var(--text-small);
+}
+
+.featured-speakers__card__details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.featured-speakers__card__details > h5.underline::after {
+  left: 20px;
+  bottom: -10px;
+  width: 40px;
+  height: 1px;
+  background: var(--tartiary-color);
+}
+
+.featured-speakers__card__details p {
+  font-size: var(--text-small);
+}
+
+.featured-speakers img.expand-icon {
+  width: 30px;
+  height: 30px;
+  filter: invert(36%) sepia(79%) saturate(1556%) hue-rotate(339deg) brightness(101%);
+}
+
+.featured-speakers a.button--secondary {
+  width: 100%;
+}
+
+.featured-speakers > a span.paragraph-normal {
+  font-size: var(--text-small);
+  color: var(--primary-color);
+}
+
+.speakers-show-less-button {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: none;
+  }
+
+  header {
+    padding: 0;
+    gap: 0;
+  }
+
+  .CTA {
+    gap: 35px;
+    padding: 90px 15%;
+    background-image: url('../assets/images/bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .CTA h1.heading--main {
+    width: 40vw;
+  }
+
+  .paragraph-box {
+    padding: 30px;
+    background: #f7f7f7;
+    border: solid 2px #fff;
+    width: 60%;
+  }
+
+  .sessions {
+    gap: 50px;
+    padding: 100px 15%;
+  }
+
+  .session-cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .session-card {
+    flex-direction: column;
+    border: solid 2px transparent;
+  }
+
+  .session-card:hover {
+    border: solid 2px var(--tartiary-color);
+  }
+
+  .session-card p {
+    text-align: center;
+  }
+
+  .sessions > a {
+    color: #fff;
+    background: none;
+    border: none;
+    border-bottom: solid 1px var(--tartiary-color);
+    padding: 5px 0;
+    text-transform: uppercase;
+  }
+
+  .featured-speakers {
+    padding: 20px 15%;
+  }
+
+  .featured-speakers__img::before {
+    filter: unset;
+  }
+
+  .featured-speakers__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featured-speakers > a {
+    display: none;
+  }
+}

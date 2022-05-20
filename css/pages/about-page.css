@@ -1,0 +1,188 @@
+.about-page-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 20px;
+}
+
+.about-page-intro h1.heading--main {
+  text-align: center;
+}
+
+.about-page-intro div.paragraph-box {
+  background: #fff;
+  border: solid 1px var(--tartiary-color);
+}
+
+.about-page-intro p {
+  text-align: center;
+}
+
+.about-page-intro h4.heading--tartiary {
+  color: var(--primary-color);
+  font-size: var(--text-small);
+}
+
+.about-page-intro div.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.story-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.story-section div.video-container {
+  width: 100%;
+  padding: 0;
+}
+
+.story-section iframe.bali-spirit-story-video {
+  width: calc(100vw - 40px);
+  height: 53vw;
+}
+
+.story-section .paragraph-box {
+  border: solid 1px var(--tartiary-color);
+  background-color: #fff;
+}
+
+.story-section p {
+  text-align: center;
+}
+
+.story-section h3 {
+  color: var(--primary-color);
+  font-size: var(--text-large);
+  text-align: center;
+}
+
+.story-section div.paragraph-box {
+  border: none;
+}
+
+.previous-events {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  background-color: #fff;
+  border-top: solid 3px var(--tartiary-color);
+  padding: 70px 20px;
+}
+
+.previous-events h3.heading--secondary {
+  text-align: center;
+}
+
+.previous-events div.paragraph-box {
+  background-color: #fff;
+  border: none;
+}
+
+.previous-events p.paragraph-normal {
+  text-align: center;
+}
+
+.previous-events img {
+  width: 100%;
+}
+
+.previous-events div.image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-box {
+  position: relative;
+  width: fit-content;
+}
+
+.image-box .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  opacity: 0.7;
+  z-index: 10;
+}
+
+.image-box div.overlay-text {
+  position: absolute;
+  color: #fff;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+}
+
+.overlay-text h3 {
+  font-family: var(--secondary-font-family);
+  font-weight: var(--bold);
+  color: #fff;
+  font-size: var(--text-large);
+}
+
+.overlay-text p {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .about-page-intro {
+    gap: 50px;
+    padding: 70px;
+    background-image: url('../../assets/images/bg-about-dektop.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+    background-color: var(--tartiary-color);
+  }
+
+  .about-page-intro h1.heading--main {
+    font-size: var(--text-x-large);
+    width: 30vw;
+  }
+
+  .about-page-intro div.paragraph-box {
+    width: 53vw;
+  }
+
+  .story-section {
+    padding: 70px;
+  }
+
+  .story-section div.paragraph-box {
+    width: 53vw;
+  }
+
+  .story-section div.video-container {
+    width: fit-content;
+    padding: 0;
+  }
+
+  .story-section iframe.bali-spirit-story-video {
+    width: calc(53vw - 40px);
+    height: 29vw;
+    margin: 0 auto;
+  }
+
+  .previous-events {
+    padding: 70px 20%;
+  }
+
+  .previous-events div.image-container {
+    flex-direction: row;
+  }
+}

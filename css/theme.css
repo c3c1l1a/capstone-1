@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Text size */
+  --text-small: 14px;
+  --text-medium: 18px;
+  --text-large: 30px;
+  --text-x-large: 50px;
+  --text-xx-large: 6vw;
+
+  /* Font family */
+  --primary-font-family: "Lato", sans-serif;
+  --secondary-font-family: "Cocogoose", sans-serif;
+
+  /* Primary color */
+  --primary-color: #272a31;
+  --secondary-color: #ec5242;
+  --tartiary-color: #d3d3d3;
+
+  /* Font weight */
+  --normal: 400;
+  --bold: 700;
+  --xtra-bold: 900;
+}
