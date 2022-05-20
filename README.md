@@ -2,6 +2,9 @@
 # Capstone project 1
 > This website created using this [design template](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) 
 
+## Link to live 
+The project is deployed [here](https://c3c1l1a.github.io/capstone-1/), if you want to see it in action.
+
 ## [](https://github.com/c3c1l1a/c3c1l1a.github.io#built-with)Built With
 -   HTML
 -   CSS
