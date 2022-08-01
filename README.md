@@ -1,15 +1,20 @@
 
-# Capstone project 1
+# Bali spirit Festical - Microverse Capstone project 1
+This a website for all lovers of Bali Spirit festival. You can book tickets, see the line up for the speakers e.t.c
 > This website created using this [design template](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) 
+
+## Project showcase
+![chrome-capture-2022-7-1](https://user-images.githubusercontent.com/8858461/182110497-f68fa1b1-3760-4e88-9daf-9989589da19d.gif)
+
 
 ## Link to live 
 The project is deployed [here](https://c3c1l1a.github.io/capstone-1/), if you want to see it in action.
-Here is a [link](https://drive.google.com/file/d/1614QUw6ersZwe764N8aZlOOqJO4rfMLT/view?usp=sharing) Presentation of how implemented the project. 
+Here is a [link](https://drive.google.com/file/d/1614QUw6ersZwe764N8aZlOOqJO4rfMLT/view?usp=sharing) Presentation of the implemention of the project. 
 
 ## [](https://github.com/c3c1l1a/c3c1l1a.github.io#built-with)Built With
 -   HTML
 -   CSS
-- JS
+-   JS
 
 ## [](https://github.com/c3c1l1a/c3c1l1a.github.io#getting-started)Getting Started
 
